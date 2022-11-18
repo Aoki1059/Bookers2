@@ -28,9 +28,11 @@
              </td>
              <td>
                <%= link_to book_path(book.id) do |f| %>
-                <%= book.title %>
+                <%= book.book_name %>
                <% end %>
              </td>
+             <td><%= book.caption %></td>
+           </tr>
          </tbody>
         <% end %>
       </table>
